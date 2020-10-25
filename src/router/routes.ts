@@ -15,16 +15,16 @@ export const routes: Array<RouteRecordRaw> = [
   {
     path: '/discovery',
     name: 'discovery',
-    component: import(/* webpackChunkName: 'discovery' */ '../views/Discovery/index.vue')
+    component: () => import(/* webpackChunkName: 'discovery' */ '../views/Discovery/index.vue')
   },
   {
     path: '/community',
     name: 'community',
-    component: import(/* webpackChunkName: 'community' */ '../views/Community/index.vue')
+    component: () => import(/* webpackChunkName: 'community' */ '../views/Community/index.vue')
   },
   {
     path: '/my',
     name: 'my',
-    component: import(/* webpackChunkName: 'my' */ '../views/My/index.vue')
+    component: () => import(/* webpackChunkName: 'my' */ '../views/My/index.vue')
   }
 ]
