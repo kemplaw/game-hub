@@ -1,0 +1,34 @@
+@mixin border1px($color) {
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid $color;
+  }
+
+  @media (-webkit-min-device-pixel-ratio: 2) {
+    &::after {
+      transform: scaleY((1 / 2));
+    }
+  }
+
+  @media (-webkit-min-device-pixel-ratio: 3) {
+    &::after {
+      transform: scaleY((1 / 3));
+    }
+    }
+
+  @media (-webkit-min-device-pixel-ratio: 2.5) {
+    &::after {
+      transform: scaleY((1 / 2.5));
+    }
+  }
+
+  @media (-webkit-min-device-pixel-ratio: 2.75) {
+    &::after {
+      transform: scaleY((1 / 2.75));
+    }
+  }
+}
