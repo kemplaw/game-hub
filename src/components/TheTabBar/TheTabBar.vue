@@ -70,7 +70,7 @@ export default defineComponent({
     width: 100%;
     height: 58px;
     background-color: #ffffff;
-    @include border1px(#999999);
+    @include border1px(#999999, 'top');
   }
 
   &-item-wrapper {
